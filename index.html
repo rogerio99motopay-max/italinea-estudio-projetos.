@@ -12,6 +12,11 @@
 #loginGate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:22px;background:linear-gradient(120deg,rgba(17,29,22,.94),rgba(35,45,36,.82)),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85') center/cover}
 .login-card{width:min(100%,420px);background:#fff;padding:38px 30px;border-radius:5px;box-shadow:0 20px 70px #0005;text-align:center}
 .login-card .brand{display:block;margin-bottom:24px}.login-card h1{font:normal 32px Georgia,serif;margin:0 0 8px}.login-card p{color:#72776f;margin:0 0 22px}.login-card input{margin:7px 0}.login-card button{width:100%;margin-top:12px}.login-error{color:#a33!important;min-height:22px;font-size:13px;margin-top:10px!important}
+
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:1000;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;box-shadow:0 6px 22px #0004;text-decoration:none;font:700 12px Arial;letter-spacing:.02em;transition:transform .2s}
+.whatsapp-float:hover{transform:scale(1.07);filter:brightness(1.05)}
+.whatsapp-float svg{width:31px;height:31px;fill:currentColor}
+@media(max-width:600px){.whatsapp-float{right:16px;bottom:16px;width:58px;height:58px}}
 </style></head>
 <body>
 <div id="loginGate">
@@ -44,6 +49,8 @@
 <div class="swatch" data-finish="Preto fosco"><i style="background:#292b29"></i>Preto fosco</div>
 </div><p id="selectedFinish" class="muted">Selecione um acabamento para adicioná-lo à ficha do projeto.</p></div></section>
 <section class="tools" id="projetos"><div class="wrap"><div class="section-head"><div><div class="tag">Organização</div><h2>Projetos salvos</h2><p class="muted">Os registros ficam armazenados localmente neste aparelho/navegador.</p></div></div><div class="panel" id="savedProjects">Nenhum projeto salvo ainda.</div></div></section>
+<a class="whatsapp-float" href="https://wa.me/5511982762170?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20no%20site%20Ital%C3%ADnea." target="_blank" rel="noopener noreferrer" aria-label="Falar com o suporte pelo WhatsApp" title="Suporte pelo WhatsApp">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .0C7.2 0 .1 7.1.1 15.9c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2a15.9 15.9 0 0 0 7.6 1.9h.1c8.8 0 15.9-7.1 15.9-15.9A15.8 15.8 0 0 0 16 0zm0 28.9h-.1a13 13 0 0 1-6.6-1.8l-.5-.3-5 1.3 1.3-4.9-.3-.5a13 13 0 1 1 11.2 6.2zm7.1-9.7c-.4-.2-2.3-1.1-2.7-1.2-.4-.1-.6-.2-.9.2-.3.4-1 1.2-1.2 1.4-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.3-1.4 3.2s1.4 3.7 1.6 4c.2.3 2.8 4.3 6.8 6 .9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/></svg></a>
 <footer>ITALÍNEA ESTÚDIO DE PROJETOS · Planejamento com atenção aos detalhes</footer><div id="toast"></div>
 <script>
 const $=id=>document.getElementById(id);let photoData="",finish="";
